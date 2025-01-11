@@ -10,7 +10,7 @@ public class Passenger : EntityBase
     public required string PhoneNumber { get; set; }
     public required string PassportNumber { get; set; }
     public Guid UserId { get; set; }
-    public required IdentityUser<Guid> Users { get; set; }
+    public required IdentityUser<Guid> User { get; set; }
     public ICollection<Booking> Bookings { get; set; }
 
     public Passenger()
